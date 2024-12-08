@@ -28,3 +28,7 @@ The environment variable is optional if running without taskfiles:
 ```bash
 go run ./cmd/reset/...
 ```
+
+## Adding Names
+The default name files come from a [Carnegie Mellon University dataset](https://www.cs.cmu.edu/Groups/AI/areas/nlp/corpora/names/), an they're newline delimited.
+Using any file with the one name per line will work, so you can use your own list of names or append them to the provided files.
