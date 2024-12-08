@@ -1,0 +1,17 @@
+version: '3'
+
+tasks:
+  go:boy:
+    desc: Run the main program
+    cmds:
+    - USER_DB=db.bolt NAMES_FILE=names/boys.txt go run ./cmd/run/...
+
+  go:girl:
+    desc: Run the main program
+    cmds:
+    - USER_DB=db.bolt NAMES_FILE=names/girls.txt go run ./cmd/run/...
+
+  go:reset:
+    desc: Run the reset program
+    cmds:
+    - USER_DB=db.bolt go run ./cmd/reset/...
